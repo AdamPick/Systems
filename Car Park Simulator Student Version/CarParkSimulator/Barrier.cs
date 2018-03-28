@@ -11,7 +11,7 @@ namespace CarParkSimulator
         private bool lifted;
         
         //constructor
-        public Barrier(bool lifted)
+        public Barrier()
         {
             this.lifted = false;
         }
