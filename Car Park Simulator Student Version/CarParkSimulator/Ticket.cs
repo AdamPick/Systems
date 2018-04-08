@@ -11,20 +11,17 @@ namespace CarParkSimulator
 
         public Ticket()
         {
-            paid = false;
+            this.paid = false;
         }
 
         public bool IsPaid()
         {
-            if (paid == true)
-                return true;
-            else
-                return false;
+            return this.paid
         }
 
         public void SetPaid()
         {
-            paid = true;
+            this.paid = true;
         }
     }
 }
