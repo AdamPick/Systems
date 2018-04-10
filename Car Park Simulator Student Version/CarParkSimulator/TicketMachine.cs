@@ -5,7 +5,20 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class TicketMachine
+    class TicketMachine (activeTickets)
     {
+        message = " ";
     }
+    
+    {
+      
+        
+        
+        
+        
+        
+        private string message  
+            
+    }
+    
 }
