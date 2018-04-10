@@ -7,5 +7,11 @@ namespace CarParkSimulator
 {
     class CarPark
     {
+
+
+        public CarPark()
+        {
+
+        }
     }
 }
