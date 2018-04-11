@@ -9,18 +9,19 @@ namespace CarParkSimulator
 
     class TicketMachine
     {
-       
-        private string message = " ";
-        
-       public TicketMachine(ActiveTickets)
-            
-            {
-            this.ActiveTickets = ActiveTickets;
-            }               
 
-        public void AssignCarPark(CarPark)
+        private ActiveTickets activeTickets;
+        private string message = " ";
+
+        public TicketMachine(ActiveTickets activeTickets)
+
         {
-            this.CarPark = CarPark;
+            this.activeTickets = activeTickets;
+        }
+
+        public void AssignCarPark(CarPark carpark)
+        {
+
         }
 
         public string CarArrived()
@@ -28,15 +29,15 @@ namespace CarParkSimulator
             message = "Press to get your ticket.";
             return message;
         }
-        
-        public string PrintTicket()
-            {
-            CarPark.TicketDispensed();
-            message = "Please collect your ticket. Thank you!";
-            return message;
-            }
 
-        public void ClearMessage()
+        public string PrintTicket()
+        {
+
+            message = "Thank you. Enjoy your stay";
+            return message;
+        }
+
+        public string ClearMessage()
         {
             message = " ";
             return message;
@@ -49,3 +50,4 @@ namespace CarParkSimulator
         }
     }
 }
+
