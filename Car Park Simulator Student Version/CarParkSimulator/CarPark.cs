@@ -40,7 +40,7 @@ namespace CarParkSimulator
         public int CarEnteredCarPark()
         {
             ticketMachine.ClearMessage();
-            entryBarrier.Lower()   
+            entryBarrier.Lower();  
             currentSpaces = currentSpaces - 1;
             if (currentSpaces > 0)
             {
@@ -81,6 +81,7 @@ namespace CarParkSimulator
         {
             if(currentSpaces == 0){
                 return true;
+                }
                 else
                     return false;
             }
@@ -92,28 +93,18 @@ namespace CarParkSimulator
                 return true;
             }
             else{
-                return false
+                return false;
             }
         }
     
         public bool hasSpaces(){
             if(currentSpaces > 0){
                 return true;
+            }
                 else
                     return false;
             }
             
          public int getCurrentSpaces(){
              return currentSpaces;
-         }
-        }
-}
-    
-    
-    
-        
-    
-    
-    
-    }
-}
+     }
