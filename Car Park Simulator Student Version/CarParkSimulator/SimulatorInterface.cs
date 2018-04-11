@@ -106,18 +106,20 @@ namespace CarParkSimulator
             btnDriverEntersTicket.Visible = false;
             btnCarExitsCarPark.Visible = true;
             UpdateDisplay();
-
         }
 
         private void CarExitsCarPark(object sender, EventArgs e)
         {
             exitSensor.CarLeftSensor();
             btnCarExitsCarPark.Visible = false;
-            btnCarArrivesAtEntrance.Visible = true;
+            btnCarArrivesAtExit.Visible = true;
 
             if (carPark.IsEmpty() == false)
             {
-                btnCarArrivesAtEntrance.Visible = true;
+                if (String.IsNullOrEmpty((string)lblTicketMachine.Text))
+                {
+                    btnCarArrivesAtEntrance.Visible = true;
+                }
             }
                 else btnCarArrivesAtExit.Visible = false;
             UpdateDisplay();
@@ -133,6 +135,15 @@ namespace CarParkSimulator
             lblFullSign.Text = Convert.ToString(fullSign.IsLit());          
             lblEntryBarrier.Text = Convert.ToString(entryBarrier.IsLifted());
             lblExitBarrier.Text = Convert.ToString(exitBarrier.IsLifted());
+            lstActiveTickets.Items.Clear();
+            List<Ticket> tickets = activeTickets.GetTickets();
+            int currentTicket = 0;
+            foreach (Ticket ticket in tickets)
+            {
+                string ticketStat = "#" + ticket.GetHashCode().ToString() + ": " + ticket.IsPaid().ToString();
+                lstActiveTickets.Items.Add(ticketStat);
+                currentTicket += 1;
+            }
         }
 
 

@@ -7,30 +7,24 @@ namespace CarParkSimulator
 {
     class ActiveTickets
     {
-        private Ticket ticket;
-        private List<Ticket> activeTickets;
-
+        List<Ticket> tickets;
         public ActiveTickets()
         {
-            activeTickets = new List<Ticket>();
+            tickets = new List<Ticket>();
         }
-
-        public int AddTicket()
+        public void AddTicket()
         {
-            ticket = new Ticket();
-            activeTickets.Add(ticket);
-            return ticket.GetHashCode();
+            Ticket ticket = new Ticket();
+            tickets.Add(ticket);
+
         }
-
-        public int RemoveTicket()
+        public void RemoveTicket()
         {
-            activeTickets.RemoveAt(0);
-            return 0;
+            tickets.RemoveAt(0);
         }
-
-        public int GetTickets()
+        public List<Ticket> GetTickets()
         {
-            return activeTickets.First().GetHashCode();
+            return tickets;
         }
     }
 }

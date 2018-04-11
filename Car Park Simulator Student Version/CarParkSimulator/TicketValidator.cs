@@ -7,6 +7,7 @@ namespace CarParkSimulator
 {
     class TicketValidator
       {
+        private CarPark carpark;
         private ActiveTickets activeTickets;
         private string message = " ";
         public TicketValidator(ActiveTickets activeTickets)
@@ -18,7 +19,7 @@ namespace CarParkSimulator
         
        public void AssignCarPark(CarPark carPark)
        {
-           
+            carpark = carPark;
        }
     
        public void CarArrived()
@@ -28,6 +29,7 @@ namespace CarParkSimulator
     
         public void TicketEntered()
         {
+            activeTickets.RemoveTicket();
             message= "Thank you, drive safely.";
         }
     

@@ -6,9 +6,9 @@ using System.Text;
 namespace CarParkSimulator
 {
 
-
     class TicketMachine
     {
+        private CarPark carpark;
 
         private ActiveTickets activeTickets;
         private string message = " ";
@@ -21,7 +21,7 @@ namespace CarParkSimulator
 
         public void AssignCarPark(CarPark carpark)
         {
-
+            this.carpark = carpark;
         }
 
         public void CarArrived()
@@ -31,7 +31,7 @@ namespace CarParkSimulator
 
         public void PrintTicket()
         {
-
+            activeTickets.AddTicket();
             message = "Thank you. Enjoy your stay";
         }
 
