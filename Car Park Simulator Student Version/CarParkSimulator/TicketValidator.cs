@@ -5,23 +5,41 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class TicketValidator
+    class TicketValidator (activeTickets)
     {
-        private string message;
+        message = " ";
+    }
        
-        public TicketValidator(string message)
+        private string message;
+        
+        
+       public void AssignCarPark(CarPark)
+       {
+           this.carPark = carPark;
+       }
+    
+       public void carArrived()
+       {
+           message = "Press to get your ticket.";
+       }
+    
+        public void TicketEntered()
         {
-            this.message = message;
+            message= "Thank you, drive safely.";
         }
-        
-        
+    
+        public void ClearMessage(){
+            message = " ";
+        }
+    
         public string GetMessage(){
+            
             return message;
         }
-        
-        public bool CarArrived(){
-        }
-        
-        
-    }
 }
+}
+            
+    
+    
+    
+    
