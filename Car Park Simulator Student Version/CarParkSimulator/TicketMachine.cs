@@ -10,15 +10,32 @@ namespace CarParkSimulator
         message = " ";
     }
     
-    {
-      
-        
-        
-        
-        
-        
-        private string message  
+            private string message;
+
+        public void AssignCarPark(CarPark)
+        {
+            this.carPark = carPark;
+        }
+
+        public void carArrived()
+        {
+            message = "Press to get your ticket.";
             
+        }
+
+        public void printTicket()
+        {
+            carPark.TicketDispensed();
+        }
+
+        public void clearMessage()
+        {
+            message = " ";
+        }
+
+        public string getMessage()
+        {
+            return message;
+        }
     }
-    
 }
