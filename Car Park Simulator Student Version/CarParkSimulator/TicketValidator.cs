@@ -5,13 +5,13 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class TicketValidator (activeTickets)
+    class TicketValidator ()
     {
-        message = " ";
-    }
+        private ActiveTickets activeTickets;
+        private string message = " ";
+        public TicketValidator(ActiveTickets ) 
        
-        private string message;
-        
+       
         
        public void AssignCarPark(CarPark)
        {
