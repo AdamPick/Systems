@@ -8,3 +8,13 @@ C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSi
 C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.SimulatorInterface.resources
 C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.GenerateResource.cache
 C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.CoreCompileInputs.cache
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csprojResolveAssemblyReference.cache
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.Properties.Resources.resources
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.SimulatorInterface.resources
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.GenerateResource.cache
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.CoreCompileInputs.cache
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\bin\Debug\CarParkSimulator.exe.config
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\bin\Debug\CarParkSimulator.exe
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\bin\Debug\CarParkSimulator.pdb
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.exe
+C:\Users\anush\Source\Repos\Systems4\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.pdb

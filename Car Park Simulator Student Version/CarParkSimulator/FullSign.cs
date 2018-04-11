@@ -19,17 +19,9 @@ namespace CarParkSimulator
         {
             return lit;
         }
-        public bool SetLit()
+        public void SetLit(bool lit)
         {
-            if (lit == false)
-            {
-                lit = true;
-            }     
-            else
-            { 
-                lit = false;
-            }
-            return lit;
+            this.lit = lit;
         }
     }
 }

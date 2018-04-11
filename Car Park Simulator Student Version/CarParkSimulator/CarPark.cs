@@ -17,7 +17,7 @@ namespace CarParkSimulator
 
 
 
-        public CarPark(FullSign fullSign, Barrier entryBarrier, Barrier exitBarrier, TicketMachine ticketMachine, TicketValidator ticketValidator)
+        public CarPark(TicketMachine ticketMachine, TicketValidator ticketValidator, FullSign fullSign, Barrier entryBarrier, Barrier exitBarrier)
         {
             this.fullSign = fullSign;
             this.entryBarrier = entryBarrier;
@@ -44,14 +44,7 @@ namespace CarParkSimulator
             ticketMachine.ClearMessage();
             entryBarrier.Lower();
             currentSpaces = currentSpaces - 1;
-            if (currentSpaces > 0)
-            {
-                fullSign.SetLit();
-            }
-            else
-            {
-                fullSign.SetLit();
-            }
+            if (this.IsFull()) fullSign.SetLit(true);
             return currentSpaces;
         }
 
@@ -73,10 +66,7 @@ namespace CarParkSimulator
             ticketValidator.ClearMessage();
             exitBarrier.Lower();
             currentSpaces = currentSpaces + 1;
-            if (currentSpaces > 0)
-            {
-                fullSign.SetLit();
-            }
+            fullSign.SetLit(false);
             return currentSpaces;
         }
 
