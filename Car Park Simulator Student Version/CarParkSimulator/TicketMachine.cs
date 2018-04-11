@@ -28,13 +28,10 @@ namespace CarParkSimulator
             message = "Press to get your ticket.";
             return message;
         }
-
-        public void printTicket()
-        {
-            CarPark.TicketDispensed();
-        }
+        
         public string PrintTicket()
             {
+            CarPark.TicketDispensed();
             message = "Please collect your ticket. Thank you!";
             return message;
             }
