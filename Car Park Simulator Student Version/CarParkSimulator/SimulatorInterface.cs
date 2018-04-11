@@ -71,7 +71,7 @@ namespace CarParkSimulator
         private void DriverPressesForTicket(object sender, EventArgs e)
         {
             ticketMachine.PrintTicket();
-
+            entryBarrier.Raise();
             btnDriverPressesForTicket.Visible = false;
             btnCarEntersCarPark.Visible = true;
             UpdateDisplay();
@@ -102,6 +102,7 @@ namespace CarParkSimulator
         private void DriverEntersTicket(object sender, EventArgs e)
         {
             ticketValidator.TicketEntered();
+            exitBarrier.Raise();
             btnDriverEntersTicket.Visible = false;
             btnCarExitsCarPark.Visible = true;
             UpdateDisplay();
