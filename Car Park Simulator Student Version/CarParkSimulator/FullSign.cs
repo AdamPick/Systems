@@ -8,23 +8,21 @@ namespace CarParkSimulator
     class FullSign
     {
         //attributes
-        private bool lit;
+        private bool lit = false;
         //constructor
         public FullSign()
         {
-            this.lit = false;
+
         }
         //operations
         public bool IsLit()
         {
-            if (lit == true)
-                return true;
-            else
-                return false;
+            return lit;
         }
-        public void SetLit()
+        public bool SetLit()
         {
             lit = true;
+            return lit;
         }
     }
 }

@@ -100,5 +100,15 @@ namespace CarParkSimulator
         private void UpdateDisplay()
         {
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SimulatorInterface_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
