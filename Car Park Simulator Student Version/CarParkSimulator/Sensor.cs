@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 
 namespace CarParkSimulator
-{
-    class Sensor
+{       
+    abstract class sensor
     {
         protected bool carOnSensor;
-
-        public void CarDetected()
+        
+        public sensor() 
         {
-            carOnSensor = true;
+            
         }
-        public void CarLeftSensor()
-        {
-            carOnSensor = false;
-        }
-        public bool IsCarOnSensor()
+        public abstract bool CarDetected();    
+        public abstract bool CarLeftSensor();
+        
+        public bool IsCarOnSensor() 
         {
             return carOnSensor;
         }
