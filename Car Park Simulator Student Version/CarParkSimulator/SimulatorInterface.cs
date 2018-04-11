@@ -71,6 +71,7 @@ namespace CarParkSimulator
         private void DriverPressesForTicket(object sender, EventArgs e)
         {
             ticketMachine.PrintTicket();
+
             btnDriverPressesForTicket.Visible = false;
             btnCarEntersCarPark.Visible = true;
             UpdateDisplay();
@@ -124,7 +125,15 @@ namespace CarParkSimulator
         private void UpdateDisplay()
         {
             lblTicketMachine.Text = ticketMachine.GetMessage();
+            lblTicketValidator.Text = ticketValidator.GetMessage();
+            lblEntrySensor.Text = Convert.ToString(entrySensor.IsCarOnSensor());
+            lblExitSensor.Text = Convert.ToString(exitSensor.IsCarOnSensor());
+            lblSpaces.Text = Convert.ToString(carPark.GetCurrentSpaces());
+            lblFullSign.Text = Convert.ToString(fullSign.IsLit());          
+            lblEntryBarrier.Text = Convert.ToString(entryBarrier.IsLifted());
+            lblExitBarrier.Text = Convert.ToString(exitBarrier.IsLifted());
         }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
