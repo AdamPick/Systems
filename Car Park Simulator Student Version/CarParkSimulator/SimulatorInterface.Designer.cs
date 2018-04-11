@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnCarArrivesAtEntrance = new System.Windows.Forms.Button();
-            this.btnDriverPressesForTicket = new System.Windows.Forms.Button();
-            this.btnCarEntersCarPark = new System.Windows.Forms.Button();
             this.lblTicketMachine = new System.Windows.Forms.Label();
+            this.btnCarEntersCarPark = new System.Windows.Forms.Button();
+            this.btnDriverPressesForTicket = new System.Windows.Forms.Button();
+            this.btnCarArrivesAtEntrance = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblTicketValidator = new System.Windows.Forms.Label();
             this.btnCarExitsCarPark = new System.Windows.Forms.Button();
@@ -41,28 +41,28 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblEntrySensor = new System.Windows.Forms.Label();
-            this.lblExitSensor = new System.Windows.Forms.Label();
-            this.lblFullSign = new System.Windows.Forms.Label();
-            this.lblSpaces = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblEntryBarrier = new System.Windows.Forms.Label();
-            this.lblExitBarrier = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.lstActiveTickets = new System.Windows.Forms.ListBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblExitBarrier = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lblExitSensor = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblEntryBarrier = new System.Windows.Forms.Label();
+            this.lblEntrySensor = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblSpaces = new System.Windows.Forms.Label();
+            this.lblFullSign = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -78,27 +78,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Entrance simulator";
             // 
-            // btnCarArrivesAtEntrance
+            // lblTicketMachine
             // 
-            this.btnCarArrivesAtEntrance.Location = new System.Drawing.Point(6, 57);
-            this.btnCarArrivesAtEntrance.Name = "btnCarArrivesAtEntrance";
-            this.btnCarArrivesAtEntrance.Size = new System.Drawing.Size(188, 54);
-            this.btnCarArrivesAtEntrance.TabIndex = 0;
-            this.btnCarArrivesAtEntrance.Text = "Car arrives at entrance";
-            this.btnCarArrivesAtEntrance.UseVisualStyleBackColor = true;
-            this.btnCarArrivesAtEntrance.Visible = false;
-            this.btnCarArrivesAtEntrance.Click += new System.EventHandler(this.CarArrivesAtEntrance);
-            // 
-            // btnDriverPressesForTicket
-            // 
-            this.btnDriverPressesForTicket.Location = new System.Drawing.Point(6, 117);
-            this.btnDriverPressesForTicket.Name = "btnDriverPressesForTicket";
-            this.btnDriverPressesForTicket.Size = new System.Drawing.Size(188, 54);
-            this.btnDriverPressesForTicket.TabIndex = 1;
-            this.btnDriverPressesForTicket.Text = "Driver presses for ticket";
-            this.btnDriverPressesForTicket.UseVisualStyleBackColor = true;
-            this.btnDriverPressesForTicket.Visible = false;
-            this.btnDriverPressesForTicket.Click += new System.EventHandler(this.DriverPressesForTicket);
+            this.lblTicketMachine.BackColor = System.Drawing.Color.DimGray;
+            this.lblTicketMachine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTicketMachine.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTicketMachine.Location = new System.Drawing.Point(6, 20);
+            this.lblTicketMachine.Name = "lblTicketMachine";
+            this.lblTicketMachine.Size = new System.Drawing.Size(188, 31);
+            this.lblTicketMachine.TabIndex = 1;
+            this.lblTicketMachine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCarEntersCarPark
             // 
@@ -111,16 +100,27 @@
             this.btnCarEntersCarPark.Visible = false;
             this.btnCarEntersCarPark.Click += new System.EventHandler(this.CarEntersCarPark);
             // 
-            // lblTicketMachine
+            // btnDriverPressesForTicket
             // 
-            this.lblTicketMachine.BackColor = System.Drawing.Color.DimGray;
-            this.lblTicketMachine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTicketMachine.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTicketMachine.Location = new System.Drawing.Point(6, 20);
-            this.lblTicketMachine.Name = "lblTicketMachine";
-            this.lblTicketMachine.Size = new System.Drawing.Size(188, 31);
-            this.lblTicketMachine.TabIndex = 1;
-            this.lblTicketMachine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDriverPressesForTicket.Location = new System.Drawing.Point(6, 117);
+            this.btnDriverPressesForTicket.Name = "btnDriverPressesForTicket";
+            this.btnDriverPressesForTicket.Size = new System.Drawing.Size(188, 54);
+            this.btnDriverPressesForTicket.TabIndex = 1;
+            this.btnDriverPressesForTicket.Text = "Driver presses for ticket";
+            this.btnDriverPressesForTicket.UseVisualStyleBackColor = true;
+            this.btnDriverPressesForTicket.Visible = false;
+            this.btnDriverPressesForTicket.Click += new System.EventHandler(this.DriverPressesForTicket);
+            // 
+            // btnCarArrivesAtEntrance
+            // 
+            this.btnCarArrivesAtEntrance.Location = new System.Drawing.Point(6, 57);
+            this.btnCarArrivesAtEntrance.Name = "btnCarArrivesAtEntrance";
+            this.btnCarArrivesAtEntrance.Size = new System.Drawing.Size(188, 54);
+            this.btnCarArrivesAtEntrance.TabIndex = 0;
+            this.btnCarArrivesAtEntrance.Text = "Car arrives at entrance";
+            this.btnCarArrivesAtEntrance.UseVisualStyleBackColor = true;
+            this.btnCarArrivesAtEntrance.Visible = false;
+            this.btnCarArrivesAtEntrance.Click += new System.EventHandler(this.CarArrivesAtEntrance);
             // 
             // groupBox2
             // 
@@ -188,6 +188,7 @@
             this.label3.Size = new System.Drawing.Size(411, 53);
             this.label3.TabIndex = 4;
             this.label3.Text = "Car Park Simulator";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnReset
             // 
@@ -215,90 +216,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Internal data";
             // 
-            // label4
+            // groupBox6
             // 
-            this.label4.Location = new System.Drawing.Point(6, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Sensor";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.groupBox6.Controls.Add(this.lstActiveTickets);
+            this.groupBox6.Location = new System.Drawing.Point(171, 20);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(144, 211);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Active Tickets";
             // 
-            // label5
+            // lstActiveTickets
             // 
-            this.label5.Location = new System.Drawing.Point(6, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Barrier";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(11, 172);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Full Sign";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(11, 205);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Spaces";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblEntrySensor
-            // 
-            this.lblEntrySensor.BackColor = System.Drawing.Color.White;
-            this.lblEntrySensor.Location = new System.Drawing.Point(60, 16);
-            this.lblEntrySensor.Name = "lblEntrySensor";
-            this.lblEntrySensor.Size = new System.Drawing.Size(70, 20);
-            this.lblEntrySensor.TabIndex = 0;
-            this.lblEntrySensor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblExitSensor
-            // 
-            this.lblExitSensor.BackColor = System.Drawing.Color.White;
-            this.lblExitSensor.Location = new System.Drawing.Point(60, 16);
-            this.lblExitSensor.Name = "lblExitSensor";
-            this.lblExitSensor.Size = new System.Drawing.Size(70, 20);
-            this.lblExitSensor.TabIndex = 0;
-            this.lblExitSensor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblFullSign
-            // 
-            this.lblFullSign.BackColor = System.Drawing.Color.White;
-            this.lblFullSign.Location = new System.Drawing.Point(71, 172);
-            this.lblFullSign.Name = "lblFullSign";
-            this.lblFullSign.Size = new System.Drawing.Size(70, 20);
-            this.lblFullSign.TabIndex = 0;
-            this.lblFullSign.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSpaces
-            // 
-            this.lblSpaces.BackColor = System.Drawing.Color.White;
-            this.lblSpaces.Location = new System.Drawing.Point(71, 205);
-            this.lblSpaces.Name = "lblSpaces";
-            this.lblSpaces.Size = new System.Drawing.Size(70, 20);
-            this.lblSpaces.TabIndex = 0;
-            this.lblSpaces.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.lblEntryBarrier);
-            this.groupBox4.Controls.Add(this.lblEntrySensor);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(11, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(141, 67);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Entry";
+            this.lstActiveTickets.FormattingEnabled = true;
+            this.lstActiveTickets.Location = new System.Drawing.Point(6, 19);
+            this.lstActiveTickets.Name = "lstActiveTickets";
+            this.lstActiveTickets.Size = new System.Drawing.Size(132, 186);
+            this.lstActiveTickets.TabIndex = 0;
+            this.lstActiveTickets.TabStop = false;
             // 
             // groupBox5
             // 
@@ -322,15 +257,6 @@
             this.label6.Text = "Sensor";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblEntryBarrier
-            // 
-            this.lblEntryBarrier.BackColor = System.Drawing.Color.White;
-            this.lblEntryBarrier.Location = new System.Drawing.Point(60, 41);
-            this.lblEntryBarrier.Name = "lblEntryBarrier";
-            this.lblEntryBarrier.Size = new System.Drawing.Size(70, 20);
-            this.lblEntryBarrier.TabIndex = 0;
-            this.lblEntryBarrier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblExitBarrier
             // 
             this.lblExitBarrier.BackColor = System.Drawing.Color.White;
@@ -349,24 +275,99 @@
             this.label13.Text = "Barrier";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // groupBox6
+            // lblExitSensor
             // 
-            this.groupBox6.Controls.Add(this.lstActiveTickets);
-            this.groupBox6.Location = new System.Drawing.Point(171, 20);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(144, 211);
-            this.groupBox6.TabIndex = 2;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Active Tickets";
+            this.lblExitSensor.BackColor = System.Drawing.Color.White;
+            this.lblExitSensor.Location = new System.Drawing.Point(60, 16);
+            this.lblExitSensor.Name = "lblExitSensor";
+            this.lblExitSensor.Size = new System.Drawing.Size(70, 20);
+            this.lblExitSensor.TabIndex = 0;
+            this.lblExitSensor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lstActiveTickets
+            // groupBox4
             // 
-            this.lstActiveTickets.FormattingEnabled = true;
-            this.lstActiveTickets.Location = new System.Drawing.Point(6, 19);
-            this.lstActiveTickets.Name = "lstActiveTickets";
-            this.lstActiveTickets.Size = new System.Drawing.Size(132, 186);
-            this.lstActiveTickets.TabIndex = 0;
-            this.lstActiveTickets.TabStop = false;
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.lblEntryBarrier);
+            this.groupBox4.Controls.Add(this.lblEntrySensor);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Location = new System.Drawing.Point(11, 19);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(141, 67);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Entry";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Sensor";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblEntryBarrier
+            // 
+            this.lblEntryBarrier.BackColor = System.Drawing.Color.White;
+            this.lblEntryBarrier.Location = new System.Drawing.Point(60, 41);
+            this.lblEntryBarrier.Name = "lblEntryBarrier";
+            this.lblEntryBarrier.Size = new System.Drawing.Size(70, 20);
+            this.lblEntryBarrier.TabIndex = 0;
+            this.lblEntryBarrier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEntrySensor
+            // 
+            this.lblEntrySensor.BackColor = System.Drawing.Color.White;
+            this.lblEntrySensor.Location = new System.Drawing.Point(60, 16);
+            this.lblEntrySensor.Name = "lblEntrySensor";
+            this.lblEntrySensor.Size = new System.Drawing.Size(70, 20);
+            this.lblEntrySensor.TabIndex = 0;
+            this.lblEntrySensor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(6, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 20);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Barrier";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(11, 205);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 20);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Spaces";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(11, 172);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Full Sign";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblSpaces
+            // 
+            this.lblSpaces.BackColor = System.Drawing.Color.White;
+            this.lblSpaces.Location = new System.Drawing.Point(71, 205);
+            this.lblSpaces.Name = "lblSpaces";
+            this.lblSpaces.Size = new System.Drawing.Size(70, 20);
+            this.lblSpaces.TabIndex = 0;
+            this.lblSpaces.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblFullSign
+            // 
+            this.lblFullSign.BackColor = System.Drawing.Color.White;
+            this.lblFullSign.Location = new System.Drawing.Point(71, 172);
+            this.lblFullSign.Name = "lblFullSign";
+            this.lblFullSign.Size = new System.Drawing.Size(70, 20);
+            this.lblFullSign.TabIndex = 0;
+            this.lblFullSign.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SimulatorInterface
             // 
@@ -385,12 +386,13 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Park Simulator";
+            this.Load += new System.EventHandler(this.SimulatorInterface_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -9,27 +9,29 @@ namespace CarParkSimulator
     {
         //attributes
         private bool lifted;
-        
+
         //constructor
         public Barrier()
         {
-            this.lifted = false;
+            lifted = false;
         }
-        
+
         //operations
-        public void Lower()
+        public bool Lower()
         {
-            this.lifted = false;
+            lifted = false;
+            return lifted;
         }
         
-        public void Raise()
+        public bool Raise()
         {
-            this.lifted = true;
+            lifted = true;
+            return lifted;
         }
         
         public bool IsLifted()
         {
-            return this.lifted;
+            return lifted;
         }
     }
 }
