@@ -5,13 +5,15 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class EntrySensor: sensor
+    class EntrySensor: Sensor
     {
-        private CarPark carPark;                
+        CarPark carPark;
+        
         public EntrySensor(CarPark carPark) 
         {
             this.carPark = carPark;
-        }     
+        }
+        
         public override bool CarDetected()          //overrides the abstract CarDetected bool already in sensor
         {
             carOnSensor = true;
