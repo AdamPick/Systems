@@ -5,7 +5,13 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class EntrySensor
+         class EntrySensor: Sensor
     {
+        CarPark carPark;
+
+        public EntrySensor(CarPark carPark)
+        {
+            this.carPark = carPark;
+        }
     }
 }
