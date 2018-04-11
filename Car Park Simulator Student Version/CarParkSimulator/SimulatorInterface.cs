@@ -113,13 +113,15 @@ namespace CarParkSimulator
         {
             exitSensor.CarLeftSensor();
             btnCarExitsCarPark.Visible = false;
-            btnCarArrivesAtEntrance.Visible = true;
-
+            btnCarArrivesAtExit.Visible = true;
             if (carPark.IsEmpty() == false)
             {
-                btnCarArrivesAtEntrance.Visible = true;
+                if (String.IsNullOrEmpty((string)lblTicketMachine.Text))
+                {
+                    btnCarArrivesAtEntrance.Visible = true;
+                }
             }
-                else btnCarArrivesAtExit.Visible = false;
+               else btnCarArrivesAtExit.Visible = false;
             UpdateDisplay();
         }
 
