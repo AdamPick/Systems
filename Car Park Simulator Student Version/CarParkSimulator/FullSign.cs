@@ -10,7 +10,7 @@ namespace CarParkSimulator
         //attributes
         private bool lit;
         //constructor
-        public FullSign(bool lit)
+        public FullSign()
         {
             this.lit = false;
         }

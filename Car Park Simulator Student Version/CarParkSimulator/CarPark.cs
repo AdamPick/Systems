@@ -7,11 +7,12 @@ namespace CarParkSimulator
 {
     class CarPark
     {
-
-
-        public CarPark()
+        private int currentSpaces = 5;
+        private const int maxSpace = 5; 
+        
+        public bool CarArrivedAtEntrance()
         {
-
+            
         }
     }
 }
