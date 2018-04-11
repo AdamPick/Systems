@@ -7,5 +7,21 @@ namespace CarParkSimulator
 {
     class ActiveTickets
     {
+        private Ticket ticket;
+        private List<Ticket> activeTickets;
+
+        public ActiveTickets()
+        {
+            activeTickets = new List<Ticket>();
+        }
+
+        public void AddTicket()
+        {
+
+        }
+        public void RemoveTicket()
+        {
+
+        }
     }
 }
