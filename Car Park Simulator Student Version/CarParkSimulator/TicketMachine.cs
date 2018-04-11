@@ -1,39 +1,52 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace CarParkSimulator
 {
-    class TicketMachine (activeTickets)
+
+
+    class TicketMachine
     {
-        message = " ";
-    }
-    
-            private string message;
+       
+        private string message = " ";
+        
+       public TicketMachine(ActiveTickets)
+            
+            {
+            this.ActiveTickets = ActiveTickets;
+            }               
 
         public void AssignCarPark(CarPark)
         {
-            this.carPark = carPark;
+            this.CarPark = CarPark;
         }
 
-        public void carArrived()
+        public string CarArrived()
         {
             message = "Press to get your ticket.";
-            
+            return message;
         }
 
         public void printTicket()
         {
-            carPark.TicketDispensed();
+            CarPark.TicketDispensed();
         }
+        public string PrintTicket()
+            {
+            message = "Please collect your ticket. Thank you!";
+            return message;
+            }
 
-        public void clearMessage()
+        public void ClearMessage()
         {
             message = " ";
+            return message;
+
         }
 
-        public string getMessage()
+        public string GetMessage()
         {
             return message;
         }
