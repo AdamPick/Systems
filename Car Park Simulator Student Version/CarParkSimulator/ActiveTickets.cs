@@ -28,7 +28,7 @@ namespace CarParkSimulator
             return 0;
         }
 
-        public int getTickets()
+        public int GetTickets()
         {
             return activeTickets.First().GetHashCode();
         }
