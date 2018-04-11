@@ -5,9 +5,10 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class ExitSensor: sensor
+    class ExitSensor: Sensor
     {
-        private CarPark carPark;                
+        private CarPark carPark;   
+        
         public Exit(CarPark carPark) 
         {
             this.carPark = carPark;
