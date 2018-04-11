@@ -12,7 +12,7 @@ namespace CarParkSimulator
         //constructor
         public FullSign()
         {
-
+            lit = false;
         }
         //operations
         public bool IsLit()
@@ -21,7 +21,14 @@ namespace CarParkSimulator
         }
         public bool SetLit()
         {
-            lit = true;
+            if (lit == false)
+            {
+                lit = true;
+            }     
+            else
+            { 
+                lit = false;
+            }
             return lit;
         }
     }

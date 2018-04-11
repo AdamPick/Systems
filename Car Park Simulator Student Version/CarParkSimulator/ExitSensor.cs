@@ -9,7 +9,7 @@ namespace CarParkSimulator
     {
         private CarPark carPark;   
         
-        public Exit(CarPark carPark) 
+        public ExitSensor(CarPark carPark) 
         {
             this.carPark = carPark;
         }     
@@ -21,7 +21,7 @@ namespace CarParkSimulator
         }    
         public override bool CarLeftSensor()        //overides the abstract CarLeftSensor bool already in sensor
         {
-            carPark.carExitedCarPark();
+            carPark.CarExitedCarPark();
             carOnSensor = false;
             return carOnSensor;
         }

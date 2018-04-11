@@ -19,9 +19,10 @@ namespace CarParkSimulator
             return paid;
         }
 
-        public void SetPaid()
+        public bool SetPaid()
         {
-            this.paid = paid;
+            paid = true;
+            return paid;
         }
     }
 }

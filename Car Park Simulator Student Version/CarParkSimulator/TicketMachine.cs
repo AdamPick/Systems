@@ -24,23 +24,20 @@ namespace CarParkSimulator
 
         }
 
-        public string CarArrived()
+        public void CarArrived()
         {
             message = "Press to get your ticket.";
-            return message;
         }
 
-        public string PrintTicket()
+        public void PrintTicket()
         {
 
             message = "Thank you. Enjoy your stay";
-            return message;
         }
 
-        public string ClearMessage()
+        public void ClearMessage()
         {
-            message = " ";
-            return message;
+            message = "";
 
         }
 

@@ -3,3 +3,8 @@ C:\Users\Brenda\Documents\SHU\SYSTEMS\Systems\Car Park Simulator Student Version
 C:\Users\Brenda\Documents\SHU\SYSTEMS\Systems\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.SimulatorInterface.resources
 C:\Users\Brenda\Documents\SHU\SYSTEMS\Systems\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.GenerateResource.cache
 C:\Users\Brenda\Documents\SHU\SYSTEMS\Systems\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.Properties.Resources.resources
+C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.SimulatorInterface.resources
+C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.GenerateResource.cache
+C:\Users\Adam\Source\Repos\Systems2\Car Park Simulator Student Version\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.CoreCompileInputs.cache

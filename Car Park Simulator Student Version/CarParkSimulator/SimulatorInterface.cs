@@ -99,6 +99,7 @@ namespace CarParkSimulator
 
         private void UpdateDisplay()
         {
+            lblTicketMachine.Text = ticketMachine.GetMessage();
         }
 
         private void label3_Click(object sender, EventArgs e)

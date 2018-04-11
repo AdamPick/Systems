@@ -21,21 +21,18 @@ namespace CarParkSimulator
            
        }
     
-       public string CarArrived()
+       public void CarArrived()
        {
            message = "Press to get your ticket.";
-            return message;
        }
     
-        public string TicketEntered()
+        public void TicketEntered()
         {
             message= "Thank you, drive safely.";
-            return message;
         }
     
-        public string ClearMessage(){
-            message = " ";
-            return message;
+        public void ClearMessage(){
+            message = "";
         }
     
         public string GetMessage(){

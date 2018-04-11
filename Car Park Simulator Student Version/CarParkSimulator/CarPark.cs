@@ -13,98 +13,107 @@ namespace CarParkSimulator
         private Barrier entryBarrier;
         private Barrier exitBarrier;
         private TicketMachine ticketMachine;
-        private TicketValidator tickeValidator;
-    }
-    
-    public CarPark(FullSign fullSign, Barrier entryBarrier, Barrier exitBarrier, TicketMachine ticketMachine, TicketValidator ticketValidator){
-        this.fullSign = fullSign;
-        this.entryBarrier = entryBarrier;
-        this.exitBarrier = exitBarrier;
-        this.ticketMachine = ticketMachine;
-        this.ticketValidator = ticketValidator;
-    }
-    
-    
-        
+        private TicketValidator ticketValidator;
+
+
+
+        public CarPark(FullSign fullSign, Barrier entryBarrier, Barrier exitBarrier, TicketMachine ticketMachine, TicketValidator ticketValidator)
+        {
+            this.fullSign = fullSign;
+            this.entryBarrier = entryBarrier;
+            this.exitBarrier = exitBarrier;
+            this.ticketMachine = ticketMachine;
+            this.ticketValidator = ticketValidator;
+        }
+
+
+
         public void CarArrivedAtEntrance()
         {
-           return ticketMachine.CarArrived();
+            ticketMachine.CarArrived();
         }
-    
+
         public string TicketDispensed()
         {
             entryBarrier.Raise();
-            return ticketMachine.printTicket();
+            return ticketMachine.GetMessage();
         }
-        
+
         public int CarEnteredCarPark()
         {
             ticketMachine.ClearMessage();
-            entryBarrier.Lower();  
+            entryBarrier.Lower();
             currentSpaces = currentSpaces - 1;
             if (currentSpaces > 0)
             {
-                fullSign.lit = false;
+                fullSign.SetLit();
             }
             else
             {
-                fullSign.lit = true;
+                fullSign.SetLit();
             }
             return currentSpaces;
         }
-    
-        public string CarArrivedAtExit()
+
+        public void CarArrivedAtExit()
         {
-            return ticketValidator.CarArrived;
-            
-         }
-    
-        public string TicketValidated()
-        {   
-            exitBarrier.Raise();
-            return ticketValidator.TicketEntered();
-            
+            ticketValidator.CarArrived();
+
         }
-        
+
+        public string TicketValidated()
+        {
+            exitBarrier.Raise();
+            return ticketValidator.GetMessage();
+
+        }
+
         public int CarExitedCarPark()
         {
             ticketValidator.ClearMessage();
             exitBarrier.Lower();
             currentSpaces = currentSpaces + 1;
-            if (currentSpaces > 0) {
-                fullSign.lit = false;
+            if (currentSpaces > 0)
+            {
+                fullSign.SetLit();
             }
             return currentSpaces;
         }
-    
-        public bool isFull()
+
+        public bool IsFull()
         {
-            if(currentSpaces == 0){
+            if (currentSpaces == 0)
+            {
                 return true;
-                }
-                else
-                    return false;
             }
+            else
+                return false;
         }
-        
-        public bool isEmpty()
-        {               
-            if(currentSpaces == 5){
+        public bool IsEmpty()
+        {
+            if (currentSpaces == 5)
+            {
                 return true;
             }
-            else{
+            else
+            {
                 return false;
             }
         }
-    
-        public bool hasSpaces(){
-            if(currentSpaces > 0){
+
+        public bool HasSpaces()
+        {
+            if (currentSpaces > 0)
+            {
                 return true;
             }
-                else
-                    return false;
-            }
-            
-         public int getCurrentSpaces(){
-             return currentSpaces;
-     }
+            else
+                return false;
+        }
+
+        public int GetCurrentSpaces()
+        {
+            return currentSpaces;
+        }
+    }
+}

@@ -22,7 +22,7 @@ namespace CarParkSimulator
         }    
         public override bool CarLeftSensor()        //overides the abstract CarLeftSensor bool already in sensor
         {
-            carPark.carEnteredCarPark();
+            carPark.CarEnteredCarPark();
             carOnSensor = false;
             return carOnSensor;
         }
