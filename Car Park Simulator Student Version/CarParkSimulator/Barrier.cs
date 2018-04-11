@@ -29,7 +29,7 @@ namespace CarParkSimulator
         
         public bool IsLifted()
         {
-            return this.lifted
+            return this.lifted;
         }
     }
 }
