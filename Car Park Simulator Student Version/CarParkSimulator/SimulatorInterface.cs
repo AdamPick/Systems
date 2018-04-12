@@ -19,6 +19,7 @@ namespace CarParkSimulator
         private EntrySensor entrySensor;
         private ExitSensor exitSensor;
         private PayStation PayStation;
+        private Ticket ticket;
         /////////////////
 
 
@@ -45,6 +46,7 @@ namespace CarParkSimulator
             carPark = new CarPark(ticketMachine, ticketValidator, fullSign, entryBarrier, exitBarrier);
             entrySensor = new EntrySensor(carPark);
             exitSensor = new ExitSensor(carPark);
+            ticket = new Ticket();
             PayStation = new PayStation();
 
             ticketMachine.AssignCarPark(carPark);
@@ -58,6 +60,7 @@ namespace CarParkSimulator
             btnCarArrivesAtExit.Visible = false;
             btnDriverEntersTicket.Visible = false;
             btnCarExitsCarPark.Visible = false;
+            btnDriverPaysForTicket.Visible = false;
 
             UpdateDisplay();
         }
@@ -100,7 +103,7 @@ namespace CarParkSimulator
         {
             exitSensor.CarDetected();
             btnCarArrivesAtExit.Visible = false;
-            btnDriverEntersTicket.Visible = true;
+            btnDriverPaysForTicket.Visible = true;
             UpdateDisplay();
         }
 
@@ -130,15 +133,16 @@ namespace CarParkSimulator
             UpdateDisplay();
         }
 
-        private void btnDriverPaysForTicket_Click(object sender, EventArgs e)
+        /*private void DriverPaysForTicket(object sender, EventArgs e)
         {
+            lblTicketValidator.Text = ticketValidator.GetMessage();
+            lstActiveTickets.Items.Add("#" + PayStation.TicketPayment(activeTickets) + ":          " + ticket.SetPaid());
+            activeTickets.RemoveTicket();
+            lstActiveTickets.Items.RemoveAt(0);
             btnDriverPaysForTicket.Visible = false;
             btnDriverEntersTicket.Visible = true;
-            lblTicketValidator.Text = ticketValidator.GetMessage();
-
-            lstActiveTickets.Items.Add("#" + PayStation.TicketPayment(activeTickets) + ":          " + ticket.SetPaid());
-
-        }
+            UpdateDisplay();
+        }*/
 
         private void UpdateDisplay()
         {
@@ -151,7 +155,6 @@ namespace CarParkSimulator
             lblEntryBarrier.Text = Convert.ToString(entryBarrier.IsLifted());
             lblExitBarrier.Text = Convert.ToString(exitBarrier.IsLifted());
             lstActiveTickets.Items.Clear();
-
             List<Ticket> tickets = activeTickets.GetTickets();
             int currentTicket = 0;
             foreach (Ticket ticket in tickets)
@@ -171,6 +174,15 @@ namespace CarParkSimulator
         private void SimulatorInterface_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDriverPaysForTicket_Click_1(object sender, EventArgs e)
+        {
+            lblTicketValidator.Text = ticketValidator.GetMessage();
+            lstActiveTickets.Items.Add("#" + PayStation.TicketPayment(activeTickets) + ": " + ticket.SetPaid().ToString());;
+            lstActiveTickets.Items.RemoveAt(0);
+            btnDriverPaysForTicket.Visible = false;
+            btnDriverEntersTicket.Visible = true;
         }
     }
 }

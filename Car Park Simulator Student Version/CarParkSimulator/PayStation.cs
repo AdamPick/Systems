@@ -17,7 +17,7 @@ namespace CarParkSimulator
         public int TicketPayment(ActiveTickets activeTickets)
         {
             ticket.SetPaid();
-            return activeTickets.GetTickets();
+            return activeTickets.GetTickets().First().GetHashCode();
         }
     }
 }

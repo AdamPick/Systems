@@ -24,13 +24,13 @@ namespace CarParkSimulator
     
        public void CarArrived()
        {
-           message = "Press to get your ticket.";
+           message = "Please insert your ticket.";
        }
     
         public void TicketEntered()
         {
             activeTickets.RemoveTicket();
-            message= "Thank you, drive safely.";
+            message = "Thank you, drive safely.";
         }
     
         public void ClearMessage(){
