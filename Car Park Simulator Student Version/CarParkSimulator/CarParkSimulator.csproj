@@ -53,6 +53,7 @@
     <Compile Include="EntrySensor.cs" />
     <Compile Include="ExitSensor.cs" />
     <Compile Include="FullSign.cs" />
+    <Compile Include="PayStation.cs" />
     <Compile Include="Sensor.cs" />
     <Compile Include="SimulatorInterface.cs">
       <SubType>Form</SubType>
