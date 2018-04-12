@@ -11,7 +11,7 @@ namespace CarParkSimulator
         private CarPark carpark;
 
         private ActiveTickets activeTickets;
-        private string message = " ";
+        private string message = "";
 
         public TicketMachine(ActiveTickets activeTickets)
 
